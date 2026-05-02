@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Suspense } from "react";
 import Script from "next/script";
 import { Manrope, Oswald } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 import { DemoFeedbackFab } from "@/components/DemoFeedbackFab";
@@ -78,6 +79,7 @@ export default async function RootLayout({
           </Suspense>
           <DemoFeedbackFab />
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
