@@ -22,9 +22,9 @@ function buildSteps() {
   return [
     {
       popover: {
-        title: "Öğrenci paneline hoş geldiniz",
+        title: "Panele hoş geldiniz",
         description:
-          "Bu kısa turda sol menüdeki başlıca sayfaları gösteriyoruz. İleri ile devam edebilir veya dışarıya tıklayarak kapatabilirsiniz.",
+          "Bu turda sol menüdeki önemli sayfaları sırayla işaret ediyoruz (10 kısa adım, yaklaşık 1 dakika). İleri ile ilerleyin; istemezseniz ESC veya dışarı tıklama ile kapatabilirsiniz.",
       },
     },
     {

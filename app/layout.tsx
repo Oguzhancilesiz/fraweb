@@ -4,7 +4,6 @@ import Script from "next/script";
 import { Manrope, Oswald } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
-import { DemoFeedbackFab } from "@/components/DemoFeedbackFab";
 import { AppChrome } from "@/components/panel/AppChrome";
 import { getPublicSiteMeta } from "@/lib/api/public-site";
 
@@ -76,7 +75,6 @@ export default async function RootLayout({
           <Suspense fallback={null}>
             <AppChrome supportEmail={supportEmail}>{children}</AppChrome>
           </Suspense>
-          <DemoFeedbackFab />
         </Providers>
       </body>
     </html>

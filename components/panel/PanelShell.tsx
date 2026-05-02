@@ -13,6 +13,7 @@ import { CoachTopBarInsights } from "./CoachTopBarInsights";
 import { PanelUserMenu } from "./PanelUserMenu";
 import { PanelThemeToggle } from "./PanelThemeToggle";
 import { StudentPortalTour } from "./StudentPortalTour";
+import { DemoFeedbackHeaderButton } from "@/components/DemoFeedback";
 import { adminNavOperasyon, adminNavSistem, adminNavTopluluk } from "@/components/admin/admin-nav";
 
 type NavItem = {
@@ -503,6 +504,7 @@ function PanelShellBody({ variant, children }: PanelShellProps) {
             </div>
             <div className="flex shrink-0 items-center gap-2">
               <PanelThemeToggle />
+              <DemoFeedbackHeaderButton />
               <PanelNotificationCenter variant={variant} pathname={pathname} onChatUnreadChange={setChatUnread} />
               <PanelUserMenu />
             </div>
